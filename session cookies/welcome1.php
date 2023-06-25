@@ -4,7 +4,7 @@ session_start();
 <html>
 <body>
 <?php
-echo "User is: ".$_SESSION["user"];  
+echo "User is: ".$_SESSION["user"]; 
 echo "password is: " .$_SESSION["pass"];
     ?>
 <br>

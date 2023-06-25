@@ -1,9 +1,9 @@
 <html>
 <body>
 <?php
-    $un=$_SESSION["user"];  
-    $pass=$_SESSION["pass"];
-if($pass=="xyz")
+$un=$_SESSION['user'];  
+$pass=$_SESSION['pass'];
+if($pass=='xyz')
 echo "valid user";
 else
 echo "invalid user";
