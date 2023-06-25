@@ -1,0 +1,65 @@
+<!-- <html>
+<head>
+<script>
+functionvalidateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+if (name==null || name==""){  
+alert("Name can't be blank");  
+return false;  
+}else if(password.length<6){  
+alert("Password must be at least 6 characters long.");  
+return false;  
+  }  
+}  
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="return validateform()">
+Name: <input type="text" name="name"/><br/>
+Password: <input type="password" name="password"/><br/>
+<input type="submit" value="register"/>
+</form>
+</body>
+</html> -->
+
+
+
+
+<html>
+<head>
+<script>
+function validate(){  
+var name=document.f1.name.value;  
+var password=document.f1.password.value;  
+var status=false;  
+if(name.length<1){  
+document.getElementById("nameloc").innerHTML="<imgsrc='unchecked.gif'/> Please enter your name";  
+status=false;  
+}else{  
+document.getElementById("nameloc").innerHTML="<imgsrc='checked.gif'/>";  
+status=true;  
+}  
+if(password.length<6){  
+document.getElementById("passwordloc").innerHTML="<imgsrc='unchecked.gif'/> Password must be at least 6 char long";  
+status=false;  
+}else{  
+document.getElementById("passwordloc").innerHTML="<imgsrc='checked.gif'/>";  
+}  
+return status;  
+}  
+</script>
+</head>
+<body>
+<form name="f1" action="#" onsubmit="return validate()">
+<table>
+<tr><td>Enter Name:</td><td><input type="text" name="name"/>
+<span id="nameloc"></span></td></tr>
+<tr><td>Enter Password:</td><td><input type="password" name="password"/>
+<span id="passwordloc"></span></td></tr>
+<tr><td colspan="2"><input type="submit" value="register"/></td></tr>
+</table>
+</form>
+</body>
+</html>
+

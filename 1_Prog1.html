@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+        <label>Enter First Number: </label>
+        <input type="text" name="num1" id="num1">
+    
+        <label>Enter First Number: </label>
+        <input type="text" name="num2" id="num2">
+    
+        <button onclick="calculate()">Submit</button>
+    <div id="result">
+
+    </div>
+
+
+<script>
+    function calculate()
+    {
+        let one = parseInt(document.getElementById("num1").value);
+        let two = parseInt(document.getElementById("num2").value);
+        let res = document.getElementById("result");
+
+        var arr = new Array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
+
+        var alphabets = "";
+        for(let i = one-1; i<two; i++)
+        {
+            alphabets += arr[i];
+        }
+
+        res.innerHTML = "Alphabets "+alphabets;
+    }
+</script>
+
+</body>
+</html>

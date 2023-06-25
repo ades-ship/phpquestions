@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function myFunction()
+ {
+  var name=prompt("Please enter your name");
+  var desig=prompt("Please enter your Designation");
+  var salary=prompt("Please enter your Salary");
+  if (name != null&& desig !=null && salary !=null)
+  {
+    document.getElementById("mname").innerHTML=name;
+    document.getElementById("mdesig").innerHTML=desig;
+    document.getElementById("msalary").innerHTML=salary;
+  }
+}
+</script>
+<p>Click the Button</p>
+<button onclick="myFunction()">Check</button>
+<table border="1">
+<tr>
+<th>Name</th><th>Designation</th><th>Salary</th>
+</tr>
+<tr>
+<td id="mname">null</td>
+<td id="mdesig">null</td>
+<td id="msalary">null</td>
+</tr>
+</table>
+</body>
+</html>
