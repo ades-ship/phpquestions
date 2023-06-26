@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<script>
+
+functionchangeBackground() 
+      {
+var a = 200;
+var b = 150;
+var c = 56;
+var x = document.getElementById('bg');
+x.style.backgroundColor = 'rgb('+a+', '+b+', '+c+')';
+document.getElementById('nm').value="";
+      }
+
+function change() 
+      {
+var a=255;
+var b=255;
+var c=255;
+var x = document.getElementById('bg');
+x.style.backgroundColor = 'rgb('+a+', '+b+', '+c+')';
+document.getElementById('nm').value="";
+      }
+</script>
+
+</head>
+<body id="bg">
+<input id="nm" onkeyup="changeBackground()" onkeydown="change()">
+</body>
+</html>
+
+
+
+
